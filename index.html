@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hujjat</title>
+    <link rel="stylesheet" href="./style.css " />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="w-full bg-white shadow-sm border-b border-gray-100">
+      <div class="max-w-[1200px] mx-auto w-full px-4">
+        <div class="flex items-center justify-between py-4">
+          <a href="/index.html">
+            <img src="/images/логотип 3 (2).svg" alt="Logo" class="h-16" />
+          </a>
+
+          <div class="relative w-1/2 flex h-10 hidden md:flex">
+            <input
+              type="text"
+              class="w-full border border-gray-300 rounded-full px-5 outline-none focus:border-orange-500"
+            />
+            <button
+              class="absolute right-0 top-0 bottom-0 bg-[#f16422] text-white px-8 rounded-full font-bold text-sm"
+            >
+              Qidirish
+            </button>
+          </div>
+
+          <div class="hidden md:flex items-center gap-4">
+            <span class="font-bold text-gray-700">+998(71)205-95-95</span>
+            <span class="font-bold cursor-pointer">Uz ▼</span>
+          </div>
+
+          <button id="burger-btn" class="md:hidden flex flex-col gap-1.5 p-2">
+            <span class="block w-6 h-0.5 bg-gray-900"></span>
+            <span class="block w-6 h-0.5 bg-gray-900"></span>
+            <span class="block w-6 h-0.5 bg-gray-900"></span>
+          </button>
+        </div>
+
+        <nav class="hidden lg:block py-4">
+          <ul
+            class="flex items-center justify-between text-[13px] font-black uppercase tracking-tight text-gray-900"
+          >
+            <li>
+              <a href="#" class="bg-[#ffdf00] px-6 py-3 rounded-full">Bosh sahifa</a>
+            </li>
+            <li>
+              <a href="/pages/dokonlar.html" class="hover:text-orange-500"
+                >Biz haqimizda</a
+              >
+            </li>
+            <li>
+              <a href="/pages/magazin.html" class="hover:text-orange-500"
+                >Do'konlar</a
+              >
+            </li>
+            <li>
+              <a href="/pages/novosti.html" class="hover:text-orange-500"
+                >Yangiliklar</a
+              >
+            </li>
+            <li>
+              <a href="/pages/СПЕЦИАЛЬНЫЕ.html" class="hover:text-orange-500"
+                >MAXSUS TAKLIFLAR</a
+              >
+            </li>
+            <li><a href="#" class="hover:text-orange-500">Hamkorlar uchun</a></li>
+            <li><a href="/pages/КАРЬЕРА.html" class="hover:text-orange-500">Karyera</a></li>
+          </ul>
+        </nav>
+
+        <div id="mobile-menu" class="hidden lg:hidden pb-4">
+          <div class="relative flex h-10 mb-4">
+            <input
+              type="text"
+              class="w-full border border-gray-300 rounded-full px-5 outline-none focus:border-orange-500"
+            />
+            <button
+              class="absolute right-0 top-0 bottom-0 bg-[#f16422] text-white px-8 rounded-full font-bold text-sm"
+            >
+              Qidirish
+            </button>
+          </div>
+
+          <div class="flex items-center gap-4 mb-4">
+            <span class="font-bold text-gray-700">+998(71)205-95-95</span>
+            <span class="font-bold cursor-pointer">Uz ▼</span>
+          </div>
+
+          <ul
+            class="flex flex-col gap-3 text-[13px] font-black uppercase tracking-tight text-gray-900"
+          >
+            <li>
+              <a href="#" class="bg-[#ffdf00] px-6 py-3 rounded-full inline-block">Bosh sahifa</a>
+            </li>
+            <li><a href="/pages/dokonlar.html">Biz haqimizda</a></li>
+            <li><a href="/pages/magazin.html">Do'konlar</a></li>
+            <li><a href="/pages/novosti.html">Yangiliklar</a></li>
+            <li>
+              <a href="/pages/СПЕЦИАЛЬНЫЕ.html">MAXSUS TAKLIFLAR</a>
+            </li>
+            <li><a href="./pages/партнёров.html">Hamkorlar uchun</a></li>
+            <li><a href="./pages/КАРЬЕРА.html">Karyera</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      const btn = document.getElementById("burger-btn");
+      const menu = document.getElementById("mobile-menu");
+
+      btn.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+    <main>
+      <section>
+        <div data-aos="fade-up" class="">
+          <div
+            id="controls-carousel"
+            class="relative w-full h-full"
+            data-carousel="static"
+          >
+            <div
+              class="relative h-56 overflow-hidden w-full rounded-base md:h-96"
+            >
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                <img
+                  src="./images/2a1249ed4ed983b3085c7604def6b742b9e26cf2 (1).jpg"
+                  class="absolute block top-0 left-0 w-full object-cover"
+                  alt="..."
+                />
+              </div>
+              <div
+                class="hidden duration-700 ease-in-out"
+                data-carousel-item="active"
+              >
+                <img
+                  src="https://havasfood.uz/wp-content/uploads/2025/12/logo22585.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <div
+                class="hidden duration-700 ease-in-out"
+                data-carousel-item
+              >
+                <img
+                  src="https://havasfood.uz/wp-content/uploads/2025/11/image_2025-11-21_20-50-13.png"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+              <div
+                class="hidden duration-700 ease-in-out"
+                data-carousel-item
+              >
+                <img
+                  src="https://havasfood.uz/wp-content/uploads/2025/12/logo25699.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+
+              <div
+                class="hidden duration-700 ease-in-out"
+                data-carousel-item
+              >
+                <img
+                  src="https://havasfood.uz/wp-content/uploads/2025/12/logo5.jpg"
+                  class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                  alt="..."
+                />
+              </div>
+            </div>
+            <!-- Boshqaruv tugmalari -->
+            <button
+              type="button"
+              class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="w-5 h-5 text-white rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m15 19-7-7 7-7"
+                  />
+                </svg>
+                <span class="sr-only">Oldingi</span>
+              </span>
+            </button>
+            <button
+              type="button"
+              class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next
+            >
+              <span
+                class="inline-flex items-center justify-center w-10 h-10 rounded-base bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+              >
+                <svg
+                  class="w-5 h-5 text-white rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m9 5 7 7-7 7"
+                  />
+                </svg>
+                <span class="sr-only">Keyingi</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+      
+      <section class="mt-[40px]">
+        <div data-aos="fade-up" class="container mx-auto px-4">
+          <div class="top-bar mb-8">
+            <h1 class="main-title text-2xl font-bold uppercase">
+              MAXSUS TAKLIFLAR
+            </h1>
+            <p class="small-info text-gray-400 italic">
+              *NARX MA'LUM MUDDAT UCHUN AMAL QILADI
+            </p>
+          </div>
+
+          <div class="product-grid">
+            <!-- Karta 1 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-top flex justify-between items-start">
+                <span class="promo-label text-[10px] font-bold text-red-600 uppercase">AKSIYADAGI<br />MAHSULOT</span>
+                <span class="badge bg-orange-500 text-white px-2 py-1 rounded font-bold">-30%</span>
+              </div>
+              <div class="img-box py-6 flex justify-center h-[200px]">
+                <img src="./images/кукуруза 1.svg" alt="Asal" class="max-h-full object-contain" />
+              </div>
+              <div class="card-bottom mt-auto">
+                <div class="name font-bold text-lg mb-4">"ASAL" Tabiiy asal</div>
+                <div class="price-box">
+                  <span class="old text-gray-400 line-through text-sm">25 000</span>
+                  <div class="new flex items-baseline gap-1">
+                    <span class="big text-2xl font-black text-orange-600">17.</span>
+                    <span class="med text-lg font-black text-orange-600">500</span>
+                    <span class="val text-xs font-bold ml-1">UZS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Karta 2 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-top flex justify-between items-start">
+                <span class="promo-label text-[10px] font-bold text-red-600 uppercase">AKSIYADAGI<br />MAHSULOT</span>
+                <span class="badge bg-orange-500 text-white px-2 py-1 rounded font-bold">-30%</span>
+              </div>
+              <div class="img-box py-6 flex justify-center h-[200px]">
+                <img src="./images/кукуруза 1.svg" alt="Asal" class="max-h-full object-contain" />
+              </div>
+              <div class="card-bottom mt-auto">
+                <div class="name font-bold text-lg mb-4">"ASAL" Tabiiy asal</div>
+                <div class="price-box">
+                  <span class="old text-gray-400 line-through text-sm">25 000</span>
+                  <div class="new flex items-baseline gap-1">
+                    <span class="big text-2xl font-black text-orange-600">17.</span>
+                    <span class="med text-lg font-black text-orange-600">500</span>
+                    <span class="val text-xs font-bold ml-1">UZS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Karta 3 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-top flex justify-between items-start">
+                <span class="promo-label text-[10px] font-bold text-red-600 uppercase">AKSIYADAGI<br />MAHSULOT</span>
+                <span class="badge bg-orange-500 text-white px-2 py-1 rounded font-bold">-30%</span>
+              </div>
+              <div class="img-box py-6 flex justify-center h-[200px]">
+                <img src="./images/кукуруза 1.svg" alt="Asal" class="max-h-full object-contain" />
+              </div>
+              <div class="card-bottom mt-auto">
+                <div class="name font-bold text-lg mb-4">"ASAL" Tabiiy asal</div>
+                <div class="price-box">
+                  <span class="old text-gray-400 line-through text-sm">25 000</span>
+                  <div class="new flex items-baseline gap-1">
+                    <span class="big text-2xl font-black text-orange-600">17.</span>
+                    <span class="med text-lg font-black text-orange-600">500</span>
+                    <span class="val text-xs font-bold ml-1">UZS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Karta 4 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
+              <div class="card-top flex justify-between items-start">
+                <span class="promo-label text-[10px] font-bold text-red-600 uppercase">AKSIYADAGI<br />MAHSULOT</span>
+                <span class="badge bg-orange-500 text-white px-2 py-1 rounded font-bold">-30%</span>
+              </div>
+              <div class="img-box py-6 flex justify-center h-[200px]">
+                <img src="./images/кукуруза 1.svg" alt="Asal" class="max-h-full object-contain" />
+              </div>
+              <div class="card-bottom mt-auto">
+                <div class="name font-bold text-lg mb-4">"ASAL" Tabiiy asal</div>
+                <div class="price-box">
+                  <span class="old text-gray-400 line-through text-sm">25 000</span>
+                  <div class="new flex items-baseline gap-1">
+                    <span class="big text-2xl font-black text-orange-600">17.</span>
+                    <span class="med text-lg font-black text-orange-600">500</span>
+                    <span class="val text-xs font-bold ml-1">UZS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Karta 5 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="500">
+              <div class="card-top flex justify-between items-start">
+                <span class="promo-label text-[10px] font-bold text-red-600 uppercase">AKSIYADAGI<br />MAHSULOT</span>
+                <span class="badge bg-orange-500 text-white px-2 py-1 rounded font-bold">-30%</span>
+              </div>
+              <div class="img-box py-6 flex justify-center h-[200px]">
+                <img src="./images/кукуруза 1.svg" alt="Asal" class="max-h-full object-contain" />
+              </div>
+              <div class="card-bottom mt-auto">
+                <div class="name font-bold text-lg mb-4">"ASAL" Tabiiy asal</div>
+                <div class="price-box">
+                  <span class="old text-gray-400 line-through text-sm">25 000</span>
+                  <div class="new flex items-baseline gap-1">
+                    <span class="big text-2xl font-black text-orange-600">17.</span>
+                    <span class="med text-lg font-black text-orange-600">500</span>
+                    <span class="val text-xs font-bold ml-1">UZS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Karta 6 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="600">
+              <div class="card-top flex justify-between items-start">
+                <span class="promo-label text-[10px] font-bold text-red-600 uppercase">AKSIYADAGI<br />MAHSULOT</span>
+                <span class="badge bg-orange-500 text-white px-2 py-1 rounded font-bold">-30%</span>
+              </div>
+              <div class="img-box py-6 flex justify-center h-[200px]">
+                <img src="./images/кукуруза 1.svg" alt="Asal" class="max-h-full object-contain" />
+              </div>
+              <div class="card-bottom mt-auto">
+                <div class="name font-bold text-lg mb-4">"ASAL" Tabiiy asal</div>
+                <div class="price-box">
+                  <span class="old text-gray-400 line-through text-sm">25 000</span>
+                  <div class="new flex items-baseline gap-1">
+                    <span class="big text-2xl font-black text-orange-600">17.</span>
+                    <span class="med text-lg font-black text-orange-600">500</span>
+                    <span class="val text-xs font-bold ml-1">UZS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div data-aos="fade-up" class="yellow-banner">
+        MAXSUS TAKLIFNI O'TKAZIB YUBORMANG! TAKLIFLAR KATALOGI HAR HAFTA YANGILANADI
+      </div>
+
+      <section class="about-section">
+        <h2 data-aos="fade-up" class="about-title">
+          BIZ <span class="highlight">HAQIMIZDA</span>
+        </h2>
+        <div data-aos="fade-up" data-aos-delay="100" class="about-content">
+          <p>
+            HAVAS — "uy yaqinidagi" chegirmali do'konlar tarmog'i. Biz xaridorlarimizga qulay narxlarda sifatli mahsulotlar taklif etamiz.
+          </p>
+          <p>
+            Do'konlarimizda mashhur jahon va mahalliy brendlarning mahsulotlari, shuningdek HAVAS savdo markasi ostida o'z ishlab chiqarishimiz mahsulotlari taqdim etiladi.
+          </p>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="200" class="button-wrapper">
+          <a href="./pages/dokonlar.html" class="btn-more">Batafsil</a>
+        </div>
+      </section>
+
+      <section>
+        <div data-aos="fade-up" class="news-container">
+          <h2 class="section-title">YANGILIKLAR</h2>
+          <div class="news-grid">
+            <img src="./images/Frame 11.png" alt="" data-aos="fade-up" data-aos-delay="100" />
+            <div class="news-item" data-aos="fade-up" data-aos-delay="200">
+              <img src="./images/Frame 7.png" alt="Do'kon" />
+            </div>
+            <div class="news-item item-vertical" data-aos="fade-up" data-aos-delay="300">
+              <img src="./images/2.png" alt="Mahsulot" />
+            </div>
+            <div class="news-item item-strawberry" data-aos="fade-up" data-aos-delay="400">
+              <img
+                src="https://tse1.mm.bing.net/th/id/OIP.WyekmZFHtuhhbNclHtIedQHaHa?cb=thfc1&rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Qulupnay"
+              />
+              <div class="overlay">
+                <h4>Mavsum ochildi! Bizda qulupnay paydo bo'ldi</h4>
+                <p class="date">Qo'shildi: 2020-yil 10-may</p>
+              </div>
+            </div>
+            <div class="news-item" data-aos="fade-up" data-aos-delay="500">
+              <img src="./images/Frame 9.png" alt="Xodimlar" />
+            </div>
+          </div>
+          <div class="button-wrapper" data-aos="fade-up" data-aos-delay="200">
+            <a href="./pages/novosti.html" class="btn-more">Barcha yangiliklar</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div data-aos="fade-up" class="contact-container">
+          <div class="contact-info">
+            <h2 class="section-title">SAVOL BERISHNI XOHLAYSIZMI?</h2>
+            <div class="contact-item">
+              <p class="label">Bizga qo'ng'iroq qiling</p>
+              <a href="tel:+998712059595" class="phone-link">+998(71) 205-95-95</a>
+            </div>
+            <form class="contact-form">
+              <p class="label">Bizga yozing</p>
+              <input type="email" placeholder="E-mail manzilingizni yozing" required />
+              <textarea placeholder="Xabar yozing..."></textarea>
+              <button type="submit" class="btn-send">Yuborish</button>
+            </form>
+          </div>
+          <div class="map-wrapper" data-aos="fade-up" data-aos-delay="200">
+            <div class="map-placeholder">
+              <img src="./images/8097b5fce1231dc0e672623a61e9d8c29f2e0257.png" alt="Xarita" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div data-aos="fade-up" class="footer-container">
+          <div class="footer-logo">
+            <img src="./images/логотип 3 (2).svg" alt="Havas Logo" />
+          </div>
+          <div class="footer-links">
+            <div class="footer-col">
+              <h4>Xaridorlar uchun:</h4>
+              <ul>
+                <li><a href="#">Do'konlar</a></li>
+                <li><a href="#">Yangiliklar</a></li>
+                <li><a href="#">Maxsus takliflar</a></li>
+                <li><a href="#">Retseptlar</a></li>
+              </ul>
+            </div>
+            <div class="footer-col no-title">
+              <ul>
+                <li><a href="#">Ijtimoiy loyihalar</a></li>
+                <li><a href="#">Biz haqimizda</a></li>
+                <li><a href="#">Hamkorlik uchun</a></li>
+                <li><a href="#">Karyera</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Hamkorlar uchun:</h4>
+              <ul>
+                <li><a href="#">Hamkorlar uchun</a></li>
+                <li><a href="#">Katalog</a></li>
+                <li><a href="#">HR anketa</a></li>
+                <li><a href="#">Fikr-mulohaza</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div data-aos="fade-up" class="footer-bottom">
+          <div class="footer-bottom-container">
+            <p>Sayt Division Marketing Agency tomonidan ishlab chiqilgan</p>
+            <div class="social-icons">
+              <a href="#"><img src="./images/instagram 1.svg" alt="" /></a>
+              <a href="#"><img src="./images/facebook 1.svg" alt="" /></a>
+              <a href="#"><img src="./images/telegram 1.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jotfor.ms/agent/embedjs/019dbee8ff88712b858446c929ab6334460c/embed.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Global tarzda AOS'ni ishga tushirish (Pastdan chiqish effekti bilan)
+      AOS.init({
+        duration: 1000, // Animatsiya davomiyligi (1 soniya)
+        once: true,     // Animatsiya faqat bir marta (pastga tushganda) ishlasin
+      });
+    </script>
+  </body>
+</html>

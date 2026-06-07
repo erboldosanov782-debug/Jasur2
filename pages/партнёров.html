@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamkorlar uchun</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./партнёров.css" />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="w-full bg-white shadow-sm border-b border-gray-100">
+      <div class="max-w-[1200px] mx-auto w-full px-4">
+        <div class="flex items-center justify-between py-4">
+          <a href="/index.html" data-aos="fade-up" data-aos-duration="600">
+            <img src="/images/логотип 3 (2).svg" alt="Logo" class="h-16" />
+          </a>
+          <div class="relative w-1/2 flex h-10 hidden md:flex" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+            <input
+              type="text"
+              class="w-full border border-gray-300 rounded-full px-5 outline-none focus:border-orange-500"
+            />
+            <button
+              class="absolute right-0 top-0 bottom-0 bg-[#f16422] text-white px-8 rounded-full font-bold text-sm"
+            >
+              Qidirish
+            </button>
+          </div>
+          <div class="hidden md:flex items-center gap-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+            <span class="font-bold text-gray-700">+998(71)205-95-95</span>
+            <span class="font-bold cursor-pointer">Uz ▼</span>
+          </div>
+          <button id="burger-btn" class="md:hidden flex flex-col gap-1.5 p-2">
+            <span class="block w-6 h-0.5 bg-gray-900"></span>
+            <span class="block w-6 h-0.5 bg-gray-900"></span>
+            <span class="block w-6 h-0.5 bg-gray-900"></span>
+          </button>
+        </div>
+        <nav class="hidden lg:block py-4" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+          <ul
+            class="flex items-center justify-between text-[13px] font-black uppercase tracking-tight text-gray-900"
+          >
+            <li>
+              <a href="#" class="bg-[#ffdf00] px-6 py-3 rounded-full">Bosh sahifa</a>
+            </li>
+            <li>
+              <a href="/pages/dokonlar.html" class="hover:text-orange-500">Biz haqimizda</a>
+            </li>
+            <li>
+              <a href="/pages/magazin.html" class="hover:text-orange-500">Do'konlar</a>
+            </li>
+            <li>
+              <a href="/pages/novosti.html" class="hover:text-orange-500">Yangiliklar</a>
+            </li>
+            <li>
+              <a href="/pages/СПЕЦИАЛЬНЫЕ.html" class="hover:text-orange-500">MAXSUS TAKLIFLAR</a>
+            </li>
+            <li><a href="#" class="hover:text-orange-500">Hamkorlar uchun</a></li>
+            <li><a href="/pages/КАРЬЕРА.html" class="hover:text-orange-500">Karyera</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="supplier-section mt-[50px]">
+        <div class="header-row" data-aos="fade-up" data-aos-duration="700">
+          <h1>Ta'minotchilar uchun taklif</h1>
+          <a href="#" class="btn-supplier">Ta'minotchi bo'lish</a>
+        </div>
+        <div class="content">
+          <p data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+            «Klass» supermarketlar tarmog'i Toshkent viloyatining yetakchi
+            korxonalari, shuningdek milliy va xorijiy kompaniyalar bilan
+            hamkorlik qiladi. Hamkorlarimiz bilan munosabatlarimiz o'zaro
+            ishonch, shaffoflik va barcha kelishuvlarga qat'iy rioya qilishga
+            asoslanadi.
+          </p>
+          <p data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+            Biz do'konlarimiz assortimentini yaxshilash yoki to'ldirish
+            qobiliyatiga ega bo'lgan takliflarga ochiqmiz. Mahsulotingiz
+            haqida bizni xabardor qilish uchun fikr-mulohaza shaklidan
+            foydalaning.
+          </p>
+          <p data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
+            Mahsulotni joylashtirish bo'yicha savollaringiz bo'lsa, ularni
+            fikr-mulohaza shakli orqali yuboring yoki ishlayotgan
+            kategoriyangizning menejeri bilan bog'laning.
+          </p>
+        </div>
+      </section>
+
+      <section class="categories-section">
+        <h2 data-aos="fade-up" data-aos-duration="700">Tovar kategoriyalari</h2>
+        <div class="categories-grid">
+          <div class="category-item" onclick="toggleActive(this)" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
+            <span>Baqqollik</span>
+            <div class="icon-circle">
+              <span class="plus">+</span>
+              <span class="check">✔</span>
+            </div>
+          </div>
+          <div class="category-item" onclick="toggleActive(this)" data-aos="fade-up" data-aos-duration="600" data-aos-delay="70">
+            <span>Sut mahsulotlari</span>
+            <div class="icon-circle">
+              <span class="plus">+</span>
+              <span class="check">✔</span>
+            </div>
+          </div>
+          <div class="category-item" onclick="toggleActive(this)" data-aos="fade-up" data-aos-duration="600" data-aos-delay="140">
+            <span>Maishiy kimyo</span>
+            <div class="icon-circle">
+              <span class="plus">+</span>
+              <span class="check">✔</span>
+            </div>
+          </div>
+          <div class="category-item" onclick="toggleActive(this)" data-aos="fade-up" data-aos-duration="600" data-aos-delay="210">
+            <span>Ichimliklar, sharbatlar bo'limi</span>
+            <div class="icon-circle">
+              <span class="plus">+</span>
+              <span class="check">✔</span>
+            </div>
+          </div>
+          <div class="category-item" onclick="toggleActive(this)" data-aos="fade-up" data-aos-duration="600" data-aos-delay="280">
+            <span>Yangi sabzavot/mevalar</span>
+            <div class="icon-circle">
+              <span class="plus">+</span>
+              <span class="check">✔</span>
+            </div>
+          </div>
+          <div class="category-item" onclick="toggleActive(this)" data-aos="fade-up" data-aos-duration="600" data-aos-delay="350">
+            <span>Non va non mahsulotlari</span>
+            <div class="icon-circle">
+              <span class="plus">+</span>
+              <span class="check">✔</span>
+            </div>
+          </div>
+          <div class="category-item" onclick="toggleActive(this)" data-aos="fade-up" data-aos-duration="600" data-aos-delay="420">
+            <span>To'qimachilik</span>
+            <div class="icon-circle">
+              <span class="plus">+</span>
+              <span class="check">✔</span>
+            </div>
+          </div>
+          <div class="category-item" onclick="toggleActive(this)" data-aos="fade-up" data-aos-duration="600" data-aos-delay="490">
+            <span>Bolalar tovarlari (Bambini do'koni)</span>
+            <div class="icon-circle">
+              <span class="plus">+</span>
+              <span class="check">✔</span>
+            </div>
+          </div>
+          <div class="category-item" onclick="toggleActive(this)" data-aos="fade-up" data-aos-duration="600" data-aos-delay="560">
+            <span>Idish-tovoq, uy-ro'zg'or buyumlari</span>
+            <div class="icon-circle">
+              <span class="plus">+</span>
+              <span class="check">✔</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <h2 data-aos="fade-up" data-aos-duration="700">Shaxsiy ma'lumotlar</h2>
+        <form action="#">
+          <div class="form-group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
+            <label>Ism</label>
+            <input type="text" placeholder="" />
+          </div>
+          <div class="form-group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+            <label>E-mail</label>
+            <input type="email" placeholder="" />
+          </div>
+          <div class="form-group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
+            <label>Telefon</label>
+            <input type="tel" placeholder="" />
+          </div>
+          <div class="form-group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+            <label>Yo'nalishni tanlang</label>
+            <div class="select-wrapper">
+              <select>
+                <option value="" disabled selected>Baqqollik</option>
+                <option value="1">Sut mahsulotlari</option>
+                <option value="2">Maishiy kimyo</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group" data-aos="fade-up" data-aos-duration="600" data-aos-delay="400">
+            <label>Matn xabari</label>
+            <textarea rows="6"></textarea>
+          </div>
+          <button type="submit" class="btn-send" data-aos="fade-up" data-aos-duration="600" data-aos-delay="500">Yuborish</button>
+        </form>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-container">
+          <div class="contact-info" data-aos="fade-up" data-aos-duration="700">
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">SAVOL BERISHNI XOHLAYSIZMI?</h2>
+            <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+              <p class="label">Bizga qo'ng'iroq qiling</p>
+              <a href="tel:+998712059595" class="phone-link">+998(71) 205-95-95</a>
+            </div>
+            <form class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <p class="label">Bizga yozing</p>
+              <input type="email" placeholder="E-mailingizni yozing" required />
+              <textarea placeholder="Xabar yozing..."></textarea>
+              <button type="submit" class="btn-send">Yuborish</button>
+            </form>
+          </div>
+          <div class="map-wrapper" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
+            <div class="map-placeholder">
+              <img
+                src="../images/8097b5fce1231dc0e672623a61e9d8c29f2e0257.png"
+                alt="Xarita"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-container">
+          <div class="footer-logo" data-aos="fade-up" data-aos-duration="600">
+            <img src="../images/логотип 3 (2).svg" alt="Havas Logo" />
+          </div>
+          <div class="footer-links" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+            <div class="footer-col">
+              <h4>Xaridorlar uchun:</h4>
+              <ul>
+                <li><a href="#">Do'konlar</a></li>
+                <li><a href="#">Yangiliklar</a></li>
+                <li><a href="#">Maxsus takliflar</a></li>
+                <li><a href="#">Retseptlar</a></li>
+              </ul>
+            </div>
+            <div class="footer-col no-title">
+              <ul>
+                <li><a href="#">Ijtimoiy loyihalar</a></li>
+                <li><a href="#">Biz haqimizda</a></li>
+                <li><a href="#">Hamkorlik uchun</a></li>
+                <li><a href="#">Karyera</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Hamkorlar uchun:</h4>
+              <ul>
+                <li><a href="#">Hamkorlar uchun</a></li>
+                <li><a href="#">Katalog</a></li>
+                <li><a href="#">HR uchun anketa</a></li>
+                <li><a href="#">Fikr-mulohaza</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+          <div class="footer-bottom-container">
+            <p>Sayt Division Marketing Agency tomonidan ishlab chiqilgan</p>
+            <div class="social-icons">
+              <a href="#"><img src="./images/instagram 1.svg" alt="" /></a>
+              <a href="#"><img src="./images/facebook 1.svg" alt="" /></a>
+              <a href="#"><img src="./images/telegram 1.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script>
+      function toggleActive(el) {
+        el.classList.toggle("active");
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        easing: "ease-out-cubic",
+        offset: 80,
+      });
+    </script>
+  </body>
+</html>

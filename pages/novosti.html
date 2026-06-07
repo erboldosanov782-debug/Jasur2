@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hujjat</title>
+    <link rel="stylesheet" href="../pages/novosti.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header class="w-full bg-white shadow-sm border-b border-gray-100">
+      <div class="max-w-[1200px] mx-auto w-full px-4">
+        <div class="flex items-center justify-between py-4">
+          <a href="/index.html" data-aos="fade-right" data-aos-duration="600">
+            <img src="/images/логотип 3 (2).svg" alt="Logo" class="h-16" />
+          </a>
+          <div class="relative w-1/2 flex h-10 hidden md:flex" data-aos="fade-down" data-aos-duration="600" data-aos-delay="100">
+            <input
+              type="text"
+              class="w-full border border-gray-300 rounded-full px-5 outline-none focus:border-orange-500"
+            />
+            <button
+              class="absolute right-0 top-0 bottom-0 bg-[#f16422] text-white px-8 rounded-full font-bold text-sm"
+            >
+              Qidirish
+            </button>
+          </div>
+          <div class="hidden md:flex items-center gap-4" data-aos="fade-left" data-aos-duration="600" data-aos-delay="200">
+            <span class="font-bold text-gray-700">+998(71)205-95-95</span>
+            <span class="font-bold cursor-pointer">Uz ▼</span>
+          </div>
+          <button id="burger-btn" class="md:hidden flex flex-col gap-1.5 p-2">
+            <span class="block w-6 h-0.5 bg-gray-900"></span>
+            <span class="block w-6 h-0.5 bg-gray-900"></span>
+            <span class="block w-6 h-0.5 bg-gray-900"></span>
+          </button>
+        </div>
+
+        <nav class="hidden lg:block py-4" data-aos="fade-down" data-aos-duration="600" data-aos-delay="300">
+          <ul
+            class="flex items-center justify-between text-[13px] font-black uppercase tracking-tight text-gray-900"
+          >
+            <li>
+              <a href="#" class="bg-[#ffdf00] px-6 py-3 rounded-full"
+                >Bosh sahifa</a
+              >
+            </li>
+            <li>
+              <a href="/pages/dokonlar.html" class="hover:text-orange-500"
+                >Biz haqimizda</a
+              >
+            </li>
+            <li>
+              <a href="/pages/magazin.html" class="hover:text-orange-500"
+                >Do'konlar</a
+              >
+            </li>
+            <li>
+              <a href="/pages/novosti.html" class="hover:text-orange-500"
+                >Yangiliklar</a
+              >
+            </li>
+            <li>
+              <a href="/pages/СПЕЦИАЛЬНЫЕ.html" class="hover:text-orange-500"
+                >MAXSUS TAKLIFLAR</a
+              >
+            </li>
+            <li>
+              <a href="./партнёров.html" class="hover:text-orange-500"
+                >Hamkorlar uchun</a
+              >
+            </li>
+            <li>
+              <a href="/pages/КАРЬЕРА.html" class="hover:text-orange-500"
+                >Karyera</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div id="mobile-menu" class="hidden lg:hidden pb-4">
+          <div class="relative flex h-10 mb-4">
+            <input
+              type="text"
+              class="w-full border border-gray-300 rounded-full px-5 outline-none focus:border-orange-500"
+            />
+            <button
+              class="absolute right-0 top-0 bottom-0 bg-[#f16422] text-white px-8 rounded-full font-bold text-sm"
+            >
+              Qidirish
+            </button>
+          </div>
+          <div class="flex items-center gap-4 mb-4">
+            <span class="font-bold text-gray-700">+998(71)205-95-95</span>
+            <span class="font-bold cursor-pointer">Uz ▼</span>
+          </div>
+          <ul
+            class="flex flex-col gap-3 text-[13px] font-black uppercase tracking-tight text-gray-900"
+          >
+            <li>
+              <a
+                href="#"
+                class="bg-[#ffdf00] px-6 py-3 rounded-full inline-block"
+                >Bosh sahifa</a
+              >
+            </li>
+            <li><a href="/pages/dokonlar.html">Biz haqimizda</a></li>
+            <li><a href="/pages/magazin.html">Do'konlar</a></li>
+            <li><a href="/pages/novosti.html">Yangiliklar</a></li>
+            <li><a href="/pages/СПЕЦИАЛЬНЫЕ.html">MAXSUS TAKLIFLAR</a></li>
+            <li><a href="#">Hamkorlar uchun</a></li>
+            <li><a href="#">Karyera</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <script>
+      const btn = document.getElementById("burger-btn");
+      const menu = document.getElementById("mobile-menu");
+      btn.addEventListener("click", function () {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+
+    <main>
+      <section>
+        <div
+          class="flex flex-col md:flex-row bg-white border border-gray-200 rounded-lg shadow-md overflow-hidden font-sans"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
+          <div
+            class="p-8 md:w-1/3 flex flex-col justify-center bg-[url('your-pattern-url')] bg-repeat"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            <h2
+              class="text-2xl font-black text-gray-900 leading-tight uppercase mb-4"
+            >
+              Olmazor tumanida do'kon ochilishi
+            </h2>
+            <div class="text-sm text-gray-700 space-y-2">
+              <p>
+                Endi siz har kuni soat
+                <span class="font-bold">08:00 dan 22:00 gacha</span>
+                manfaatli xaridlarni amalga oshirishingiz mumkin.
+              </p>
+              <div class="pt-2">
+                <p>
+                  <span class="font-bold">Manzilimiz:</span> Toshkent sh.,
+                  Yunusobod tumani, Yunusota ko'chasi.
+                </p>
+                <p>
+                  <span class="font-bold">Mo'ljal:</span> 12-poliklinika
+                  qarshisida.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-2/3 relative min-h-[300px]" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+            <img
+              src="../images/37dd98c7bc04eb360ad96c8b4739dfd095ab6d65.jpg"
+              alt="Havas do'koni ochilishi"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute top-10 left-10 bg-yellow-400 p-4 border-4 border-yellow-500 shadow-lg"
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              data-aos-duration="600"
+            >
+              <h1 class="text-4xl font-black text-green-700 uppercase">
+                Biz ochildik!
+              </h1>
+              <p class="text-red-600 font-bold">Xush kelibsiz!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-[30px]">
+        <div class="container">
+          <nav class="news-nav" data-aos="fade-up" data-aos-duration="600">
+            <a href="" class="active">Asosiy voqealar</a>
+            <a href="">Barchasi</a>
+          </nav>
+
+          <div class="main-content">
+            <section class="news-list">
+
+              <article class="news-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="0">
+                <div class="news-img">
+                  <img
+                    src="../images/07e531b2fda4349bf598a6a0d9fd7acb19c0c1ce.jpg"
+                    alt="Havas"
+                  />
+                </div>
+                <div class="news-info">
+                  <span class="date">Qo'shildi: 12.12.2020</span>
+                  <h3>
+                    HAVAS tarmog'ining Sayramdagi 43-chi chegirmali do'koni
+                    ochilishidan fotoreportaj!
+                  </h3>
+                  <p>
+                    Endi har kuni soat 08:00 dan 22:00 gacha manfaatli
+                    xaridlarni amalga oshirishingiz mumkin. Manzilimiz: Toshkent
+                    sh., Yunusobod tumani, Yunusota ko'chasi, mo'ljal:
+                    12-poliklinika qarshisida.
+                  </p>
+                  <a href="#" class="read-more">Batafsil o'qish...</a>
+                </div>
+              </article>
+
+              <article class="news-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                <div class="news-img">
+                  <img
+                    src="../images/f2d37ba50afcd74e2cb90a33eadfe8213019047d.png"
+                    alt="Havas"
+                  />
+                </div>
+                <div class="news-info">
+                  <span class="date">Qo'shildi: 12.12.2020</span>
+                  <h3>
+                    HAVAS yubiley do'koni ochildi! Do'kon allaqachon ochiq va
+                    ishlay boshladi...
+                  </h3>
+                  <p>
+                    HAVAS ning 25-do'koni Yashnobod tumanida, Lisunova-2
+                    massivi, Izzat ko'chasida joylashdi. Yashnobod tumani,
+                    Lisunova-2 massivi, Izzat ko'chasi.
+                  </p>
+                  <a href="" class="read-more">Batafsil o'qish...</a>
+                </div>
+              </article>
+
+              <article class="news-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                <div class="news-img">
+                  <img
+                    src="../images/6dd96d94f5436837a61153ad8749777067091bb5.png"
+                    alt="Havas"
+                  />
+                </div>
+                <div class="news-info">
+                  <span class="date">Qo'shildi: 12.12.2020</span>
+                  <h3>
+                    O'zbekistondagi birinchi chegirmali do'konlar tarmog'i! "Uy
+                    yaqinidagi do'kon" formati
+                  </h3>
+                  <p>
+                    Endi har kuni soat 08:00 dan 22:00 gacha manfaatli
+                    xaridlarni amalga oshirishingiz mumkin. Manzilimiz: Toshkent
+                    sh., Yunusobod tumani, Yunusota ko'chasi, mo'ljal:
+                    12-poliklinika qarshisida.
+                  </p>
+                  <a href="" class="read-more">Batafsil o'qish...</a>
+                </div>
+              </article>
+
+              <article class="news-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                <div class="news-img">
+                  <img
+                    src="../images/590e5ac3d0b6ec11dd4cd75890a55b111e72f989.png"
+                    alt="Havas"
+                  />
+                </div>
+                <div class="news-info">
+                  <span class="date">Qo'shildi: 12.12.2020</span>
+                  <h3>
+                    HAVAS tarmog'ining Sayramdagi 43-chi chegirmali do'koni
+                    ochilishidan fotoreportaj!
+                  </h3>
+                  <p>
+                    Endi har kuni soat 08:00 dan 22:00 gacha manfaatli
+                    xaridlarni amalga oshirishingiz mumkin. Manzilimiz: Toshkent
+                    sh., Yunusobod tumani, Yunusota ko'chasi, mo'ljal:
+                    12-poliklinika qarshisida.
+                  </p>
+                  <a href="" class="read-more">Batafsil o'qish...</a>
+                </div>
+              </article>
+
+              <article class="news-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
+                <div class="news-img">
+                  <img
+                    src="../images/cae313b78e06ff4918cab992024e24ce5ee0ee57.png"
+                    alt="Havas"
+                  />
+                </div>
+                <div class="news-info">
+                  <span class="date">Qo'shildi: 12.12.2020</span>
+                  <h3>
+                    HAVAS yubiley do'koni ochildi! Do'kon allaqachon ochiq va
+                    ishlay boshladi...
+                  </h3>
+                  <p>
+                    Endi har kuni soat 08:00 dan 22:00 gacha manfaatli
+                    xaridlarni amalga oshirishingiz mumkin. Manzilimiz: Toshkent
+                    sh., Yunusobod tumani, Yunusota ko'chasi, mo'ljal:
+                    12-poliklinika qarshisida.
+                  </p>
+                  <a href="" class="read-more">Batafsil o'qish...</a>
+                </div>
+              </article>
+            </section>
+
+            <aside class="sidebar" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+              <div class="sidebar-header">Maqolalar</div>
+              <div class="sidebar-content">
+                <div class="sidebar-item" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
+                  <span class="date">Qo'shildi: 12.12.2020</span>
+                  <h4>
+                    HAVAS tarmog'ining Sayramdagi 43-chi chegirmali do'koni
+                    ochilishidan fotoreportaj!
+                  </h4>
+                  <p>
+                    Endi har kuni soat 08:00 dan 22:00 gacha manfaatli
+                    xaridlarni amalga oshirishingiz mumkin. Manzilimiz: Toshkent
+                    sh., Yunusobod tumani, Yunusota ko'chasi, mo'ljal:
+                    12-poliklinika qarshisida.
+                  </p>
+                </div>
+                <div class="sidebar-item" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
+                  <span class="date">Qo'shildi: 12.12.2020</span>
+                  <h4>
+                    HAVAS tarmog'ining Sayramdagi 43-chi chegirmali do'koni
+                    ochilishidan fotoreportaj!
+                  </h4>
+                  <p>
+                    Endi har kuni soat 08:00 dan 22:00 gacha manfaatli
+                    xaridlarni amalga oshirishingiz mumkin. Manzilimiz: Toshkent
+                    sh., Yunusobod tumani, Yunusota ko'chasi, mo'ljal:
+                    12-poliklinika qarshisida.
+                  </p>
+                </div>
+                <div class="sidebar-item" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
+                  <span class="date">Qo'shildi: 12.12.2020</span>
+                  <h4>
+                    HAVAS tarmog'ining Sayramdagi 43-chi chegirmali do'koni
+                    ochilishidan fotoreportaj!
+                  </h4>
+                  <p>
+                    Endi har kuni soat 08:00 dan 22:00 gacha manfaatli
+                    xaridlarni amalga oshirishingiz mumkin. Manzilimiz: Toshkent
+                    sh., Yunusobod tumani, Yunusota ko'chasi, mo'ljal:
+                    12-poliklinika qarshisida.
+                  </p>
+                </div>
+                <a href="" class="all-articles" data-aos="fade-up" data-aos-delay="400">Barcha maqolalarni o'qish</a>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <div class="contact-container">
+          <div class="contact-info" data-aos="fade-right" data-aos-duration="800">
+            <h2 class="section-title" data-aos="fade-down" data-aos-delay="100">SAVOL BERISHNI XOHLAYSIZMI?</h2>
+            <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+              <p class="label">Bizga qo'ng'iroq qiling</p>
+              <a href="tel:+998712059595" class="phone-link"
+                >+998(71) 205-95-95</a
+              >
+            </div>
+            <form class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <p class="label">Bizga yozing</p>
+              <input
+                type="email"
+                placeholder="E-mail manzilingizni yozing"
+                required
+              />
+              <textarea placeholder="Xabar yozing..."></textarea>
+              <button type="submit" class="btn-send">Yuborish</button>
+            </form>
+          </div>
+          <div class="map-wrapper" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
+            <div class="map-placeholder">
+              <img
+                src="../images/8097b5fce1231dc0e672623a61e9d8c29f2e0257.png"
+                alt="Xarita"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-container">
+          <div class="footer-logo" data-aos="fade-up" data-aos-duration="600">
+            <img src="../images/логотип 3 (2).svg" alt="Havas Logo" />
+          </div>
+          <div class="footer-links" data-aos="fade-up" data-aos-duration="600" data-aos-delay="150">
+            <div class="footer-col">
+              <h4>Xaridorlar uchun:</h4>
+              <ul>
+                <li><a href="#">Do'konlar</a></li>
+                <li><a href="#">Yangiliklar</a></li>
+                <li><a href="#">Maxsus takliflar</a></li>
+                <li><a href="#">Retseptlar</a></li>
+              </ul>
+            </div>
+            <div class="footer-col no-title">
+              <ul>
+                <li><a href="#">Ijtimoiy loyihalar</a></li>
+                <li><a href="#">Biz haqimizda</a></li>
+                <li><a href="#">Hamkorlik uchun</a></li>
+                <li><a href="#">Karyera</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Hamkorlar uchun:</h4>
+              <ul>
+                <li><a href="#">Hamkorlar uchun</a></li>
+                <li><a href="#">Katalog</a></li>
+                <li><a href="#">HR anketa</a></li>
+                <li><a href="#">Fikr-mulohaza</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
+          <div class="footer-bottom-container">
+            <p>Sayt Division Marketing Agency tomonidan ishlab chiqilgan</p>
+            <div class="social-icons">
+              <a href="#"><img src="./images/instagram 1.svg" alt="" /></a>
+              <a href="#"><img src="./images/facebook 1.svg" alt="" /></a>
+              <a href="#"><img src="./images/telegram 1.svg" alt="" /></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+        easing: "ease-out-cubic",
+        offset: 80,
+      });
+    </script>
+  </body>
+</html>

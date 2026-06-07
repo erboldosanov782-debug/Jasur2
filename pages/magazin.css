@@ -1,0 +1,379 @@
+@media (max-width: 768px) {
+  .my-top-bar {
+    flex-direction: column !important;
+    gap: 15px;
+  }
+
+  .my-search-box {
+    width: 100% !important;
+  }
+
+  .my-info {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  .my-nav-menu {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+
+  .my-nav-menu li {
+    margin-bottom: 5px;
+  }
+
+  .my-nav-menu a {
+    font-size: 11px !important;
+    padding: 6px 12px !important;
+  }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  border-bottom: 4px solid #ffcc00;
+  padding-bottom: 5px;
+  margin-bottom: 30px;
+}
+
+.filter-label {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.districts-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px 20px;
+  margin-bottom: 40px;
+}
+
+.district {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.district:hover {
+  color: #ff6600;
+}
+
+.district.active {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+.map-container {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 992px) {
+  .districts-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .districts-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .districts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.main-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+/* Karta umumiy stili */
+.store-item {
+  display: flex;
+  background-color: #fcfcfc;
+  border: 1px solid #f0f0f0;
+  margin-bottom: 15px;
+  min-height: 160px;
+  transition: transform 0.2s ease;
+}
+
+.store-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Rasmlar qismi */
+.image-box {
+  flex: 0 0 340px;
+  overflow: hidden;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Ma'lumotlar qismi va nuqtali fon */
+.content-box {
+  flex: 1;
+  padding: 20px 25px;
+  position: relative;
+  background-image: radial-gradient(#dcdcdc 1.2px, transparent 1.2px);
+  background-size: 18px 18px; /* Nuqtalar orasidagi masofa */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content-box h3 {
+  font-size: 17px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.content-box p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.phone-text {
+  color: #4caf50 !important; /* Yashil rang */
+  font-weight: 600;
+}
+
+/* Xarita havolasi */
+.location-btn {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 12px;
+  text-decoration: none;
+  color: #4caf50;
+  font-size: 13.5px;
+  font-weight: 500;
+}
+
+.location-btn .material-icons {
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+/* Mobil qurilmalar uchun (Ekran kichrayganda) */
+@media (max-width: 768px) {
+  .store-item {
+    flex-direction: column;
+  }
+  .image-box {
+    flex: 0 0 200px;
+  }
+}
+
+.contact-section {
+  padding: 80px 20px;
+  background: #fdfdfd url("bg-pattern.png") no-repeat center;
+  background-size: cover;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #ffde00;
+  z-index: -1;
+}
+
+.contact-item {
+  margin-bottom: 25px;
+}
+
+.label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.phone-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.btn-send {
+  background: #ffde00;
+  border: none;
+  padding: 12px 45px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-send:hover {
+  background: #e6c800;
+}
+
+.map-wrapper {
+  flex: 1.2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.map-placeholder img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+.main-footer {
+  padding-top: 60px;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  padding: 0 20px 40px;
+}
+
+.footer-links {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.footer-col h4 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #888;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #ffde00;
+}
+
+.no-title {
+  margin-top: 35px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+}
+
+.footer-bottom-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 850px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .no-title {
+    margin-top: 0;
+  }
+}

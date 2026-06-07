@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header-row h1 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.btn-supplier {
+  text-decoration: none;
+  color: #f16422;
+  border: 1px solid #f16422;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-supplier:hover {
+  background: #f16422;
+  color: #fff;
+}
+
+.content p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.categories-section h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 40px 0 20px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px 30px;
+  margin-bottom: 50px;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e5e7eb;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.category-item span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.icon-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plus {
+  color: #f16422;
+  font-size: 22px;
+}
+
+.check {
+  display: none;
+  color: #fff;
+  font-size: 12px;
+}
+
+.category-item.active {
+  border-color: #000;
+}
+
+.category-item.active .icon-circle {
+  background: #4caf50;
+}
+
+.category-item.active .plus {
+  display: none;
+}
+
+.category-item.active .check {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  .header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .header-row h1 {
+    font-size: 24px;
+  }
+}
+.form-section {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  max-width: 800px; /* Forma biroz ixchamroq turishi uchun */
+}
+
+.form-section h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 12px 20px;
+  border: 1px solid #f16422; /* To'q sariq chegara */
+  border-radius: 50px;
+  outline: none;
+  font-size: 14px;
+  background-color: #fff;
+}
+
+/* Textarea uchun yumaloqlikni biroz kamaytirish */
+.form-group textarea {
+  border-radius: 20px;
+  resize: none;
+}
+
+/* Select uchun maxsus stil */
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  color: #999;
+}
+
+.select-wrapper::after {
+  content: ">";
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%) rotate(90deg);
+  color: #f16422;
+  pointer-events: none;
+  font-weight: bold;
+}
+
+/* Jo'natish tugmasi */
+.btn-send {
+  background-color: #ffdf00; /* Sariq rang */
+  color: #000;
+  border: none;
+  padding: 15px 45px;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.btn-send:hover {
+  background-color: #f1c400;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .form-section {
+    max-width: 100%;
+  }
+}
+.contact-section {
+  padding: 80px 20px;
+  background: #fdfdfd url("bg-pattern.png") no-repeat center;
+  background-size: cover;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #ffde00;
+  z-index: -1;
+}
+
+.contact-item {
+  margin-bottom: 25px;
+}
+
+.label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.phone-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.btn-send {
+  background: #ffde00;
+  border: none;
+  padding: 12px 45px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-send:hover {
+  background: #e6c800;
+}
+
+.map-wrapper {
+  flex: 1.2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.map-placeholder img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+.main-footer {
+  padding-top: 60px;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  padding: 0 20px 40px;
+}
+
+.footer-links {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.footer-col h4 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #888;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #ffde00;
+}
+
+.no-title {
+  margin-top: 35px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+}
+
+.footer-bottom-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 850px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .no-title {
+    margin-top: 0;
+  }
+}

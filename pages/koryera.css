@@ -1,0 +1,449 @@
+/* Umumiy sozlamalar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ASOSIY KONTEYNER - MUAMMONI HAL QILUVCHI QISM */
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* O'rtaga keltirish */
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* 1. Banner stili */
+.hero-section {
+  background-color: #f16422;
+  padding: 40px 0;
+  color: white;
+  overflow: hidden;
+}
+
+.hero-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-text h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #ffdf00;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.hero-text ul {
+  list-style: none;
+}
+.hero-text li {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.hero-image img {
+  max-width: 500px;
+  width: 100%;
+}
+
+/* 2. Xodim stili */
+.employee-section {
+  padding: 60px 0;
+}
+
+.employee-card {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.employee-img-box {
+  flex: 0 0 400px;
+}
+
+.employee-img-box img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.employee-info h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.post {
+  color: #888;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.description p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* 3. Kategoriyalar stili */
+.categories-section {
+  padding-bottom: 80px;
+}
+.section-title {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cat-item {
+  border: 1px solid #ddd;
+  padding: 15px 25px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.status-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.status-icon::before {
+  content: "+";
+  color: #f16422;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cat-item.active {
+  border-color: #4caf50;
+}
+.cat-item.active .status-icon {
+  background: #4caf50;
+}
+.cat-item.active .status-icon::before {
+  content: "✔";
+  color: white;
+  font-size: 12px;
+}
+
+/* Mobil moslashuv */
+@media (max-width: 768px) {
+  .hero-wrapper,
+  .employee-card {
+    flex-direction: column;
+  }
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+  .employee-img-box {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}
+/* Cardlarning asosiy dizayni */
+.location-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  min-height: 200px;
+  cursor: pointer;
+}
+
+/* Hover effekti */
+.location-card:hover {
+  border-color: #f16422;
+  box-shadow: 0 15px 30px rgba(241, 100, 34, 0.12);
+  transform: translateY(-6px);
+}
+
+/* Sarlavha stili */
+.location-card h3 {
+  font-size: 22px;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 12px;
+  line-height: 1.2;
+}
+
+/* Manzil stili */
+.location-card p {
+  font-size: 15px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Link va strelka stili */
+.location-card a {
+  color: #f16422;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: auto;
+}
+
+.location-card a span {
+  margin-left: 8px;
+  transition: transform 0.2s ease;
+}
+
+.location-card:hover a span {
+  transform: translateX(6px);
+}
+
+/* Tab aktiv bo'lgandagi rang (Flowbite uchun) */
+[aria-selected="true"] {
+  color: #f16422 !important;
+  border-color: #f16422 !important;
+}
+/* Sarlavha ostidagi sariq chiziq effekti */
+h2 span {
+  transform: skew(-10deg); /* Chiziqni biroz qiyshaytiradi (rasmdagidek) */
+  opacity: 0.9;
+}
+
+/* Pagination strelkalari uchun */
+.nav-arrow {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #000;
+  line-height: 1;
+  transition: color 0.2s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-arrow:hover {
+  color: #f16422; /* Havas'ning asosiy to'q sariq rangi */
+}
+
+/* Matnning o'qilishi uchun maxsus masofa */
+p {
+  max-width: 550px;
+}
+
+/* Mobil qurilmalarda pagination o'rtaga kelishi uchun */
+@media (max-width: 1024px) {
+  h2 {
+    text-align: center;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .flex-col {
+    align-items: center;
+    text-align: left;
+  }
+}
+.contact-section {
+  padding: 80px 20px;
+  background: #fdfdfd url("bg-pattern.png") no-repeat center;
+  background-size: cover;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: #ffde00;
+  z-index: -1;
+}
+
+.contact-item {
+  margin-bottom: 25px;
+}
+
+.label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.phone-link {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+
+.btn-send {
+  background: #ffde00;
+  border: none;
+  padding: 12px 45px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-send:hover {
+  background: #e6c800;
+}
+
+.map-wrapper {
+  flex: 1.2;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.map-placeholder img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Footer */
+.main-footer {
+  padding-top: 60px;
+  border-top: 1px solid #eee;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  padding: 0 20px 40px;
+}
+
+.footer-links {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.footer-col h4 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #888;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #ffde00;
+}
+
+.no-title {
+  margin-top: 35px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #eee;
+  padding: 20px 0;
+}
+
+.footer-bottom-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom p {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+@media (max-width: 850px) {
+  .contact-container {
+    flex-direction: column;
+  }
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .no-title {
+    margin-top: 0;
+  }
+}
